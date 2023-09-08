@@ -1,4 +1,4 @@
-import OrderTableHeader from "@/components/OrderTableHeader";
+import OrderTableHeader from "@/components/orders-table/OrderTableHeader";
 import { Table } from "@/components/ui/Table";
 import { Calendar, Clock, Package, Truck } from "lucide-react";
 import Image from "next/image";
