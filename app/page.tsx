@@ -1,5 +1,9 @@
+import DeliveredCard from "@/components/orders-table/DeliveredCard";
 import OrderTableHeader from "@/components/orders-table/OrderTableHeader";
+import OrderedCard from "@/components/orders-table/OrderedCard";
+import PendingCard from "@/components/orders-table/PendingCard";
 import PhaseCard from "@/components/orders-table/PhaseCard";
+import ScheduledCard from "@/components/orders-table/ScheduledCard";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/Table";
 import { Calendar, Clock, Package, Truck } from "lucide-react";
 import Image from "next/image";
@@ -48,12 +52,21 @@ export default function Home() {
 
         <TableBody>
           <TableRow>
-            <TableCell className="border p-6">
+            <TableCell className="border p-6 align-top">
               <PhaseCard />
             </TableCell>
-            <TableCell>Ordered</TableCell>
-            <TableCell>Scheduled</TableCell>
-            <TableCell>Delivered</TableCell>
+            <TableCell className="border p-6 align-top">
+              <PendingCard />
+            </TableCell>
+            <TableCell className="border p-6 align-top">
+              <OrderedCard />
+            </TableCell>
+            <TableCell className="border p-6 align-top">
+              <ScheduledCard date="2023-11-15" />
+            </TableCell>
+            <TableCell className="border p-6 align-top">
+              <DeliveredCard />
+            </TableCell>
           </TableRow>
         </TableBody>
       </Table>
