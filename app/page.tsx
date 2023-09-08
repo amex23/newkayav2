@@ -1,14 +1,27 @@
 import OrderTableHeader from "@/components/orders-table/OrderTableHeader";
-import { Table } from "@/components/ui/Table";
+import PhaseCard from "@/components/orders-table/PhaseCard";
+import { Table, TableBody, TableCell, TableRow } from "@/components/ui/Table";
 import { Calendar, Clock, Package, Truck } from "lucide-react";
 import Image from "next/image";
 
 const mockData = {
   headers: [
     { name: "Pending", icon: <Clock />, color: "bg-[#6FB0EB] text-[#6FB0EB]" },
-    { name: "Ordered", icon: <Package />, color: "bg-[#FF914D] text-[#FF914D]" },
-    { name: "Scheduled", icon: <Calendar />, color: "bg-[#FFCC00] text-[#FFCC00]" },
-    { name: "Delivered", icon: <Truck />, color: "bg-[#005433] text-[#005433]" },
+    {
+      name: "Ordered",
+      icon: <Package />,
+      color: "bg-[#FF914D] text-[#FF914D]",
+    },
+    {
+      name: "Scheduled",
+      icon: <Calendar />,
+      color: "bg-[#FFCC00] text-[#FFCC00]",
+    },
+    {
+      name: "Delivered",
+      icon: <Truck />,
+      color: "bg-[#005433] text-[#005433]",
+    },
   ],
 };
 
@@ -32,6 +45,17 @@ export default function Home() {
           primaryColumn="Phases"
           subColumns={mockData.headers}
         />
+
+        <TableBody>
+          <TableRow>
+            <TableCell className="border p-6">
+              <PhaseCard />
+            </TableCell>
+            <TableCell>Ordered</TableCell>
+            <TableCell>Scheduled</TableCell>
+            <TableCell>Delivered</TableCell>
+          </TableRow>
+        </TableBody>
       </Table>
     </div>
   );
