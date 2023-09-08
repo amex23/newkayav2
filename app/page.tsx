@@ -51,23 +51,25 @@ export default function Home() {
         />
 
         <TableBody>
-          <TableRow>
-            <TableCell className="border p-6 align-top">
-              <PhaseCard />
-            </TableCell>
-            <TableCell className="border p-6 align-top">
-              <PendingCard />
-            </TableCell>
-            <TableCell className="border p-6 align-top">
-              <OrderedCard />
-            </TableCell>
-            <TableCell className="border p-6 align-top">
-              <ScheduledCard date="2023-11-15" />
-            </TableCell>
-            <TableCell className="border p-6 align-top">
-              <DeliveredCard />
-            </TableCell>
-          </TableRow>
+          {[1, 2, 3, 4].map((i) => (
+            <TableRow key={`row-${i}`}>
+              <TableCell className="border-x p-6 align-top">
+                <PhaseCard />
+              </TableCell>
+              <TableCell className="border-x p-6 align-top">
+                <PendingCard />
+              </TableCell>
+              <TableCell className="border-x p-6 align-top">
+                <OrderedCard />
+              </TableCell>
+              <TableCell className="border-x p-6 align-top">
+                <ScheduledCard date="2023-11-15" />
+              </TableCell>
+              <TableCell className="border-x p-6 align-top">
+                <DeliveredCard />
+              </TableCell>
+            </TableRow>
+          ))}
         </TableBody>
       </Table>
     </div>
