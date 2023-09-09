@@ -6,7 +6,7 @@ type Props = {
 
 const ScheduledCard = ({ date }: Props) => {
   return (
-    <div className="w-full h-full bg-white rounded-[30px] p-7 py-4">
+    <div className="w-full h-full bg-white rounded-[30px] p-7 py-4 mt-5">
       <p>Project Delivery Date</p>
 
       <h1 className="text-[#005433] text-2xl font-semibold mt-2">

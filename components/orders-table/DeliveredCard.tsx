@@ -1,3 +1,4 @@
+import { Order } from "@/app/types";
 import Rating from "@/components/ui/Rating";
 
 const mockData = {
@@ -5,10 +6,10 @@ const mockData = {
   rating: 4.3,
 };
 
-const DeliveredCard = () => {
-  const { orderNumber, rating } = mockData;
+const DeliveredCard = (props:{order:Order}) => {
+  const { orderNumber, rating } = props.order;
   return (
-    <div className="w-full h-full bg-white rounded-[30px] p-7 py-4">
+    <div className="w-full h-full bg-white rounded-[30px] p-7 py-4 mt-5">
       <p className="text-[#005433] font-medium">
         Order #{orderNumber}
       </p>

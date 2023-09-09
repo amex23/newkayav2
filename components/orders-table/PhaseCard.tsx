@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Progress } from "../ui/Progress";
 import { Home } from "lucide-react";
-
+import { Project } from "@/app/types";
 const mockData = {
   name: "0 Dann Farm - Horn",
   percentage: 73,
@@ -11,13 +11,15 @@ const mockData = {
     "https://s3-alpha-sig.figma.com/img/39d7/96e2/d445db85e1b10a6b436a37085c25ab94?Expires=1694995200&Signature=h8vwnBd8gMPKmJ87e6RUqy0rTvoIEqoyVvbqp26LjU5FekT~uiHRVGxiFjcI5JvJ0FHqu7yBF3rXwaY5RirMZTIb~S0TvsP8bJg1Kq9qSsysvSaWiqut-PSDqgycOMPhyBlCKd4DaQY-~1qhPC5gy1fagCixVpccgLItGi3IQbA3kZipADWhFrnq97Y3kDOHBnKMxnf4yOqdmDvL9WhVNrkAtYwTIu1DntQPDUoOC6on3wW1ty4gSk0~gMLQ882DyAW6uNd121yI8dTT499n-JSfUYPZtASh6Bl8aqUU7D0xPPi-ETBiYwqg~4eJE-MFc4dJU-2r90CcIma8GneSMw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
 };
 
-const PhaseCard = () => {
-  const { image, number, name, percentage, model } = mockData; // TODO: Turn this into props
+const PhaseCard = (props:{child:Project}) => {
+  // const { image, number, name, percentage, model } = mockData; // TODO: Turn this into props
+  const { name,percentage,number,model, img} = props.child
+  
   return (
-    <div className="w-full h-full bg-white rounded-[10%]">
+    <div className="w-full h-full bg-white rounded-[10%] mt-5">
       <div className="relative">
         <Image
-          src={image}
+          src={img}
           alt={name}
           width={100}
           height={100}
