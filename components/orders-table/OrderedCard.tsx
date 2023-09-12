@@ -1,6 +1,6 @@
 import { formatMoney } from "@/lib/utils";
 import Image from "next/image";
-
+import { Order } from "@/app/types";
 const mockData = {
   name: "Oasis 3 Flex Residence - PacClad - White Paint",
   orderNumber: "76836",
@@ -9,20 +9,20 @@ const mockData = {
   total: 8058.58,
 };
 
-const OrderedCard = () => {
-  const { orderNumber, name, image, total } = mockData;
+const OrderedCard = (props:{order:Order}) => {
+  const { orderNumber, title, img, price } = props.order;
   return (
-    <div className="bg-white p-7 py-4 w-full h-full rounded-[10%]">
+    <div className="bg-white p-7 py-4 w-full h-full rounded-[10%] mt-5">
       <p className="text-[#005433] font-medium">
         Order #{orderNumber}
       </p>
 
       <h1 className="text-[#005433] text-2xl font-semibold mt-2">
-        {name}
+        {title}
       </h1>
 
       <Image
-        src={image}
+        src={img}
         alt={orderNumber}
         width={100}
         height={100}
@@ -30,7 +30,7 @@ const OrderedCard = () => {
       />
 
       <h2 className="text-xl font-bold">
-        {formatMoney(total)}
+        {formatMoney(price)}
       </h2>
     </div>
   );
