@@ -39,6 +39,7 @@ const mockData = {
 
 };
 
+
 const Project = [
   {
     phase: "",
