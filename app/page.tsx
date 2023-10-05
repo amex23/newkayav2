@@ -92,67 +92,80 @@ export default function Home() {
         price: 21312321
       }]
 
-    },
-    {
-      phase: "abc",
-      img: "https://s3-alpha-sig.figma.com/img/39d7/96e2/d445db85e1b10a6b436a37085c25ab94?Expires=1694995200&Signature=h8vwnBd8gMPKmJ87e6RUqy0rTvoIEqoyVvbqp26LjU5FekT~uiHRVGxiFjcI5JvJ0FHqu7yBF3rXwaY5RirMZTIb~S0TvsP8bJg1Kq9qSsysvSaWiqut-PSDqgycOMPhyBlCKd4DaQY-~1qhPC5gy1fagCixVpccgLItGi3IQbA3kZipADWhFrnq97Y3kDOHBnKMxnf4yOqdmDvL9WhVNrkAtYwTIu1DntQPDUoOC6on3wW1ty4gSk0~gMLQ882DyAW6uNd121yI8dTT499n-JSfUYPZtASh6Bl8aqUU7D0xPPi-ETBiYwqg~4eJE-MFc4dJU-2r90CcIma8GneSMw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      name: "dasdsas",
-      percentage: 0,
-      number: "",
-      model: "u55u5",
-      orders: [{
-        status: "ordered",
-        orderNumber: "312321",
-        title: "haha",
-        img: "",
-        price: 21312321232
-      },
-      {
-        status: "ordered",
-        orderNumber: "31232dads1",
-        title: "haha1",
-        img: "",
-        price: 21312321
-      }]
-
-    },
-    {
-      phase: "bcd",
-      name: "",
-
-      img: "https://s3-alpha-sig.figma.com/img/39d7/96e2/d445db85e1b10a6b436a37085c25ab94?Expires=1694995200&Signature=h8vwnBd8gMPKmJ87e6RUqy0rTvoIEqoyVvbqp26LjU5FekT~uiHRVGxiFjcI5JvJ0FHqu7yBF3rXwaY5RirMZTIb~S0TvsP8bJg1Kq9qSsysvSaWiqut-PSDqgycOMPhyBlCKd4DaQY-~1qhPC5gy1fagCixVpccgLItGi3IQbA3kZipADWhFrnq97Y3kDOHBnKMxnf4yOqdmDvL9WhVNrkAtYwTIu1DntQPDUoOC6on3wW1ty4gSk0~gMLQ882DyAW6uNd121yI8dTT499n-JSfUYPZtASh6Bl8aqUU7D0xPPi-ETBiYwqg~4eJE-MFc4dJU-2r90CcIma8GneSMw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      percentage: 0,
-      number: "",
-      model: "dads",
-      orders: [{
-        status: "",
-        _id: "",
-        title: "",
-        img: "",
-        price: 0
-      }]
-
     }
+    // {
+    //   phase: "abc",
+    //   img: "https://s3-alpha-sig.figma.com/img/39d7/96e2/d445db85e1b10a6b436a37085c25ab94?Expires=1694995200&Signature=h8vwnBd8gMPKmJ87e6RUqy0rTvoIEqoyVvbqp26LjU5FekT~uiHRVGxiFjcI5JvJ0FHqu7yBF3rXwaY5RirMZTIb~S0TvsP8bJg1Kq9qSsysvSaWiqut-PSDqgycOMPhyBlCKd4DaQY-~1qhPC5gy1fagCixVpccgLItGi3IQbA3kZipADWhFrnq97Y3kDOHBnKMxnf4yOqdmDvL9WhVNrkAtYwTIu1DntQPDUoOC6on3wW1ty4gSk0~gMLQ882DyAW6uNd121yI8dTT499n-JSfUYPZtASh6Bl8aqUU7D0xPPi-ETBiYwqg~4eJE-MFc4dJU-2r90CcIma8GneSMw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    //   name: "dasdsas",
+    //   percentage: 0,
+    //   number: "",
+    //   model: "u55u5",
+    //   orders: [{
+    //     status: "ordered",
+    //     orderNumber: "312321",
+    //     title: "haha",
+    //     img: "",
+    //     price: 21312321232
+    //   },
+    //   {
+    //     status: "ordered",
+    //     orderNumber: "31232dads1",
+    //     title: "haha1",
+    //     img: "",
+    //     price: 21312321
+    //   }]
+
+    // }
+    // {
+    //   phase: "bcd",
+    //   name: "",
+
+    //   img: "https://s3-alpha-sig.figma.com/img/39d7/96e2/d445db85e1b10a6b436a37085c25ab94?Expires=1694995200&Signature=h8vwnBd8gMPKmJ87e6RUqy0rTvoIEqoyVvbqp26LjU5FekT~uiHRVGxiFjcI5JvJ0FHqu7yBF3rXwaY5RirMZTIb~S0TvsP8bJg1Kq9qSsysvSaWiqut-PSDqgycOMPhyBlCKd4DaQY-~1qhPC5gy1fagCixVpccgLItGi3IQbA3kZipADWhFrnq97Y3kDOHBnKMxnf4yOqdmDvL9WhVNrkAtYwTIu1DntQPDUoOC6on3wW1ty4gSk0~gMLQ882DyAW6uNd121yI8dTT499n-JSfUYPZtASh6Bl8aqUU7D0xPPi-ETBiYwqg~4eJE-MFc4dJU-2r90CcIma8GneSMw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    //   percentage: 0,
+    //   number: "",
+    //   model: "dads",
+    //   orders: [{
+    //     status: "",
+    //     _id: "",
+    //     title: "",
+    //     img: "",
+    //     price: 0
+    //   }]
+
+    // }
   ];
-  const [groupByFilter, setGroupByFilter] = useState<ProjectGroup>(_.groupBy(data, 'model'));
-  // const groupByFilter = _.groupBy(data, 'phase')
+	const [groupByFilter, setGroupByFilter] = useState<ProjectGroup>(_.groupBy(data, 'model'));
+	// const groupByFilter = _.groupBy(data, 'phase')
 
-  const fetchData = () => {
+	const fetchData = () => {
 
-  }
-  const filter = (value : string) => {
-    setGroupByFilter(_.groupBy(data, value))
-  
-    setSelectedView(value[0].toUpperCase() + value.slice(1))
-  }
+	}
+	const filter = (value : string) => {
+	setGroupByFilter(_.groupBy(data, value))
+
+	setSelectedView(value[0].toUpperCase() + value.slice(1))
+	}
+	
+
+	const { Client } = require('@notionhq/client');
+
+	const notion = new Client({ auth: process.env.NOTION_API_KEY });
+
+	(async () => {
+	  const pageId = 'fe3ee4c49a3e47869d489a3450077fd7';
+	  const response = await notion.pages.retrieve({ page_id: pageId });
+	  console.log(response);
+	})();
+
 
 
   return (
     <div className="w-full">
-      <div className="flex justify-between items-start p-6 px-16 " >
+      <div className="flex justify-between items-start p-6 px-16 bg-red-400" >
         <h1 className="scroll-m-20 text-4xl font-semibold lg:text-5xl">
           WelcomeHomes <br />Order Summary
         </h1>
+		<a href="/test">User</a>
         <Image
           src="/kaya.svg"
           width={125}
